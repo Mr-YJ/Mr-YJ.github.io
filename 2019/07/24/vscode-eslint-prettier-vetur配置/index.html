@@ -6,16 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | YJ的博客</title>
+  <title>vscode eslint+prettier+vetur配置 | YJ的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="前端,开发者,程序猿">
-<meta property="og:type" content="website">
-<meta property="og:title" content="YJ的博客">
-<meta property="og:url" content="http://yoursite.com/archives/page/2/index.html">
+  <meta name="description" content="需要安装的依赖12345678910&quot;@vue/cli-plugin-babel&quot;: &quot;^3.0.3&quot;,&quot;@vue/cli-plugin-eslint&quot;: &quot;^3.0.3&quot;,&quot;@vue/cli-service&quot;: &quot;^3.0.3&quot;,&quot;@vue/eslint-config-prettier&quot;: &quot;^4.0.1&quot;,&quot;babel-eslint&quot;: &quot;^10.0.1&quot;,&quot;babel-polyfill&quot;:">
+<meta name="keywords" content="前端,开发者,程序猿">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vscode eslint+prettier+vetur配置">
+<meta property="og:url" content="http://yoursite.com/2019/07/24/vscode-eslint-prettier-vetur配置/index.html">
 <meta property="og:site_name" content="YJ的博客">
+<meta property="og:description" content="需要安装的依赖12345678910&quot;@vue/cli-plugin-babel&quot;: &quot;^3.0.3&quot;,&quot;@vue/cli-plugin-eslint&quot;: &quot;^3.0.3&quot;,&quot;@vue/cli-service&quot;: &quot;^3.0.3&quot;,&quot;@vue/eslint-config-prettier&quot;: &quot;^4.0.1&quot;,&quot;babel-eslint&quot;: &quot;^10.0.1&quot;,&quot;babel-polyfill&quot;:">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-07-24T10:28:15.315Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="YJ的博客">
+<meta name="twitter:title" content="vscode eslint+prettier+vetur配置">
+<meta name="twitter:description" content="需要安装的依赖12345678910&quot;@vue/cli-plugin-babel&quot;: &quot;^3.0.3&quot;,&quot;@vue/cli-plugin-eslint&quot;: &quot;^3.0.3&quot;,&quot;@vue/cli-service&quot;: &quot;^3.0.3&quot;,&quot;@vue/eslint-config-prettier&quot;: &quot;^4.0.1&quot;,&quot;babel-eslint&quot;: &quot;^10.0.1&quot;,&quot;babel-polyfill&quot;:">
   
     <link rel="alternative" href="/atom.xml" title="YJ的博客" type="application/atom+xml">
   
@@ -139,295 +143,137 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-vscode-eslint-prettier-vetur配置" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      vscode eslint+prettier+vetur配置
+    </h1>
+  
+
+        
+        <a href="/2019/07/24/vscode-eslint-prettier-vetur配置/" class="archive-article-date">
+  	<time datetime="2019-07-24T10:21:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-24</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="需要安装的依赖"><a href="#需要安装的依赖" class="headerlink" title="需要安装的依赖"></a>需要安装的依赖</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"@vue/cli-plugin-babel"</span>: <span class="string">"^3.0.3"</span>,</span><br><span class="line"><span class="string">"@vue/cli-plugin-eslint"</span>: <span class="string">"^3.0.3"</span>,</span><br><span class="line"><span class="string">"@vue/cli-service"</span>: <span class="string">"^3.0.3"</span>,</span><br><span class="line"><span class="string">"@vue/eslint-config-prettier"</span>: <span class="string">"^4.0.1"</span>,</span><br><span class="line"><span class="string">"babel-eslint"</span>: <span class="string">"^10.0.1"</span>,</span><br><span class="line"><span class="string">"babel-polyfill"</span>: <span class="string">"^6.26.0"</span>,</span><br><span class="line"><span class="string">"eslint"</span>: <span class="string">"^5.8.0"</span>,</span><br><span class="line"><span class="string">"eslint-config-prettier"</span>: <span class="string">"^4.1.0"</span>,</span><br><span class="line"><span class="string">"eslint-plugin-prettier"</span>: <span class="string">"^3.0.1"</span>,</span><br><span class="line"><span class="string">"eslint-plugin-vue"</span>: <span class="string">"^5.0.0"</span>,</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="vscode-中设置"><a href="#vscode-中设置" class="headerlink" title="vscode 中设置"></a>vscode 中设置</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">// tab两个空格</span><br><span class="line"><span class="string">"editor.tabSize"</span>: 2,</span><br><span class="line"><span class="string">"editor.tabCompletion"</span>: <span class="string">"on"</span>,</span><br><span class="line"><span class="string">"editor.detectIndentation"</span>: <span class="literal">false</span>,</span><br><span class="line">// 保存时自动格式化</span><br><span class="line"><span class="string">"editor.formatOnSave"</span>: <span class="literal">true</span>,</span><br><span class="line">// 使用prettier格式化js文件</span><br><span class="line"><span class="string">"[javascript]"</span>: &#123;</span><br><span class="line">  <span class="string">"editor.defaultFormatter"</span>: <span class="string">"esbenp.prettier-vscode"</span></span><br><span class="line">&#125;,</span><br><span class="line">// 离开操作文件时候自动保存</span><br><span class="line"><span class="string">"files.autoSave"</span>: <span class="string">"onFocusChange"</span>,</span><br><span class="line"></span><br><span class="line"><span class="string">"eslint.enable"</span>: <span class="literal">true</span>,</span><br><span class="line"><span class="string">"eslint.autoFixOnSave"</span>: <span class="literal">true</span>,</span><br><span class="line"></span><br><span class="line"><span class="string">"eslint.validate"</span>: [</span><br><span class="line">  <span class="string">"javascript"</span>,</span><br><span class="line">  <span class="string">"javascriptreact"</span>,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">"language"</span>: <span class="string">"vue"</span>,</span><br><span class="line">    <span class="string">"autoFix"</span>: <span class="literal">true</span></span><br><span class="line">  &#125;</span><br><span class="line">],</span><br><span class="line"></span><br><span class="line">// 使用单引号</span><br><span class="line"><span class="string">"prettier.singleQuote"</span>: <span class="literal">true</span>,</span><br><span class="line">// 去掉每行后的分好</span><br><span class="line"><span class="string">"prettier.semi"</span>: <span class="literal">false</span>,</span><br><span class="line"></span><br><span class="line">// 不检查模板</span><br><span class="line"><span class="string">"vetur.validation.template"</span>: <span class="literal">false</span>,</span><br><span class="line"><span class="string">"vetur.format.defaultFormatter.html"</span>: <span class="string">"js-beautify-html"</span>,</span><br><span class="line"><span class="string">"vetur.format.defaultFormatterOptions"</span>: &#123;</span><br><span class="line">  // html属性不自动换行</span><br><span class="line">  <span class="string">"js-beautify-html"</span>: &#123;</span><br><span class="line">    <span class="string">"wrap_attributes"</span>: <span class="string">"auto"</span></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  // 使得vue文件能够更加prettier格式化</span><br><span class="line">  <span class="string">"prettier"</span>: &#123;</span><br><span class="line">    <span class="string">"semi"</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="string">"singleQuote"</span>: <span class="literal">true</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<h2 id="eslint-配置文件需要创建-eslintrc-js"><a href="#eslint-配置文件需要创建-eslintrc-js" class="headerlink" title="eslint 配置文件需要创建.eslintrc.js"></a>eslint 配置文件需要创建.eslintrc.js</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  root: <span class="literal">true</span>,</span><br><span class="line">  env: &#123;</span><br><span class="line">    node: <span class="literal">true</span></span><br><span class="line">  &#125;,</span><br><span class="line">  extends: [<span class="string">'plugin:vue/essential'</span>],</span><br><span class="line">  rules: &#123;</span><br><span class="line">    <span class="string">'no-console'</span>: process.env.NODE_ENV === <span class="string">'production'</span> ? <span class="string">'error'</span> : <span class="string">'off'</span>,</span><br><span class="line">    <span class="string">'no-debugger'</span>: process.env.NODE_ENV === <span class="string">'production'</span> ? <span class="string">'error'</span> : <span class="string">'off'</span>,</span><br><span class="line">    <span class="string">'vue/no-parsing-error'</span>: [2, &#123; <span class="string">'x-invalid-end-tag'</span>: <span class="literal">false</span> &#125;],</span><br><span class="line">    quotes: [<span class="string">'error'</span>, <span class="string">'single'</span>, &#123; allowTemplateLiterals: <span class="literal">true</span> &#125;],</span><br><span class="line">    semi: [<span class="string">'error'</span>, <span class="string">'never'</span>],</span><br><span class="line">    <span class="string">'space-before-function-paren'</span>: [<span class="string">'error'</span>, <span class="string">'never'</span>]</span><br><span class="line">  &#125;,</span><br><span class="line">  parserOptions: &#123;</span><br><span class="line">    parser: <span class="string">'babel-eslint'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/05/11/vue-virtual-keyboard-vue虚拟键盘/" class="archive-article-date">
-  	<time datetime="2019-05-11T03:26:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/11/vue-virtual-keyboard-vue虚拟键盘/">vue-virtual-keyboard vue虚拟键盘</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/24/vscode-eslint-prettier-vetur配置/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/05/10/flex布局/" class="archive-article-date">
-  	<time datetime="2019-05-10T02:48:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-10</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/07/09/ionic-打开摄像头或相册上传图片/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">ionic+cordova打开摄像头或相册上传图片</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/10/flex布局/">flex布局</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/05/09/js实现网页触摸滚动/" class="archive-article-date">
-  	<time datetime="2019-05-09T10:21:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/09/js实现网页触摸滚动/">js实现网页触摸滚动</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/05/08/interactjs的/" class="archive-article-date">
-  	<time datetime="2019-05-08T09:47:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/08/interactjs的/">interactjs的</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/30/浏览器调用摄像头/" class="archive-article-date">
-  	<time datetime="2019-04-30T07:47:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/30/浏览器调用摄像头/">浏览器调用摄像头</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/29/linux基础命令/" class="archive-article-date">
-  	<time datetime="2019-04-29T09:17:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/29/linux基础命令/">linux基础命令</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/25/vuex/" class="archive-article-date">
-  	<time datetime="2019-04-25T06:44:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/25/vuex/">vuex</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/24/js-xlsx的使用/" class="archive-article-date">
-  	<time datetime="2019-04-24T07:41:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-24</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/24/js-xlsx的使用/">js-xlsx的使用</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/23/Promise/" class="archive-article-date">
-  	<time datetime="2019-04-23T09:26:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/23/Promise/">Promise</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/22/async-await/" class="archive-article-date">
-  	<time datetime="2019-04-22T11:32:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/22/async-await/">async/await</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/">&laquo; Prev</a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/page/3/">3</a><a class="extend next" rel="next" href="/archives/page/3/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -451,8 +297,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
